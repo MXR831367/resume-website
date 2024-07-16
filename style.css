@@ -1,0 +1,39 @@
+.margin {
+    margin: 0 0;
+}
+
+.splash {
+    background: url("images/GC20230514.jpg") fixed no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    height: 100svh;
+}
+
+.splash-inner {
+    padding-top: 35vh;
+    padding-top: 35svh;
+}
+
+.bottom {
+    height: 2000px;
+    background-color: blueviolet;
+}
+
+h1 {
+    font-family: 'Norwester', sans-serif;
+    text-align: center;
+    line-height: 95%;
+    text-transform: uppercase;
+    font-size: 48pt;
+    color: black;
+} 
+
+h2 {
+    font-family: "Kollektif", sans-serif;
+    text-align: center;
+    font-size: 15pt;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
