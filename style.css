@@ -1,0 +1,453 @@
+:root {
+  --primarycolor: #a2e3c4;
+  --secondarycolor: #94a99c;
+  --linkcolor: #317bd0;
+  --backgroundgray: #dddddd;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-start: 0;
+  /* margin-block-end: 0; */
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Norwester", sans-serif;
+  font-weight: 400;
+  font-size: 46pt;
+  text-transform: uppercase;
+  text-align: center;
+  /* margin-top: 0; */
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 16pt;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1pt;
+  /* margin: 0; */
+}
+
+h3 {
+  font-family: "Norwester", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-block-end: 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-block-end: 0;
+}
+
+small {
+  color: var(--secondarycolor);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+a {
+  color: var(--linkcolor);
+}
+
+footer {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 0.875rem;
+  color: var(--secondarycolor);
+  text-align: center;
+}
+
+.splash {
+  background: url("images/96268719-DSC_5604.jpeg") fixed no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  height: 100svh;
+}
+
+.page-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100svh;
+  min-height: 100vh;
+  display: flex;
+}
+
+.column3-container {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.column2-container {
+  display: grid;
+  gap: 4rem;
+  /* padding-top: 2rem;
+  padding-bottom: 2rem; */
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.lh-8half {
+  line-height: 2.125;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mbe-0 {
+  margin-block-end: 0;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.v-center {
+  align-items: center;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section-header {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: var(--primarycolor);
+  display: inline-block;
+  margin-top: 0;
+}
+
+.time-line-container {
+  padding-top: 4rem;
+  height: 100%;
+  margin-left: 0.5rem;
+}
+
+.time-line {
+  background-color: var(--secondarycolor);
+  width: 0.125rem;
+  height: 100%;
+}
+
+.intro-text {
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+.relative-container {
+  position: relative;
+  width: 100%;
+}
+
+.absolute-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.avatar-container {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.avatar {
+  border-radius: 99999px;
+  max-width: 100%;
+  /* height: auto; */
+  display: block;
+}
+
+.experience {
+  padding-top: 1.25rem;
+  min-height: 100vh;
+}
+
+.emp-details {
+  padding-left: 3rem;
+  position: relative;
+}
+
+.bullet {
+  background-color: white;
+  border-color: var(--secondarycolor);
+  border-width: 2px;
+  border-radius: 9999px;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.375rem;
+  margin-left: -3.04rem;
+  position: absolute;
+  box-sizing: border-box;
+  border-style: solid;
+}
+
+.bullet-pad {
+  padding-left: 3rem;
+  position: relative;
+}
+
+.badge {
+  position: relative;
+  max-width: 100px;
+  display: none;
+}
+
+.date-range {
+  padding-left: 3rem;
+  color: var(--secondarycolor);
+  text-transform: uppercase;
+}
+
+.justify-between-flex {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-block-end: 0;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.skill-container {
+  min-width: 8rem;
+  height: 1rem;
+  margin-left: 1rem;
+  background-color: var(--backgroundgray);
+}
+
+.skills {
+  font-size: smaller;
+  height: 100%;
+  background-color: var(--secondarycolor);
+}
+
+/* technical skills */
+.netframe {
+  width: 93%;
+}
+.netcore {
+  width: 80%;
+}
+.aspnet {
+  width: 35%;
+}
+.git {
+  width: 66%;
+}
+.sql {
+  width: 90%;
+}
+.bpa {
+  width: 95%;
+}
+.restsoap {
+  width: 66%;
+}
+.jsonxml {
+  width: 90%;
+}
+.aimlmodeling {
+  width: 66%;
+}
+.java {
+  width: 49%;
+}
+.nosql {
+  width: 55%;
+}
+.javascript {
+  width: 10%;
+}
+.python {
+  width: 25%;
+}
+.htmlcss {
+  width: 25%;
+}
+.soldesign {
+  width: 91%;
+}
+.infradesign {
+  width: 84%;
+}
+.prjctscope {
+  width: 79%;
+}
+.procflow {
+  width: 91%;
+}
+.sftwrdesign {
+  width: 66%;
+}
+.pocdev {
+  width: 93%;
+}
+.uxuidesign {
+  width: 36%;
+}
+.cicd {
+  width: 50%;
+}
+.windows {
+  width: 96%;
+}
+.macintosh {
+  width: 99%;
+}
+.linux {
+  width: 54%;
+}
+.github {
+  width: 66%;
+}
+.agile {
+  width: 73%;
+}
+.captiva {
+  width: 98%;
+}
+.infoarchive {
+  width: 73%;
+}
+.docmansys {
+  width: 75%;
+}
+
+@media (min-width: 600px) {
+  .column3-container {
+    max-width: 600px;
+  }
+}
+@media (min-width: 720px) {
+  .column3-container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 768px) {
+  .column3-container {
+    gap: 2rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .column2-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .r-start2-span2 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+  }
+  .avatar-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .badge {
+    display: inline;
+  }
+  .section-header {
+    margin-left: -1rem;
+    grid-column-start: 2;
+  }
+  .date-range {
+    line-height: 2;
+    text-align: right;
+    padding-left: 0;
+  }
+  .r-pageheight {
+    min-height: auto;
+  }
+  footer {
+    text-align: left;
+  }
+}
+@media (min-width: 920px) {
+  .column3-container {
+    max-width: 920px;
+  }
+}
