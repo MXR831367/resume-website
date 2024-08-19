@@ -3,6 +3,9 @@
 .AppleDouble
 .LSOverride
 
+# Image Source Files
+.xcf
+
 # Icon must end with two \r
 Icon
 
