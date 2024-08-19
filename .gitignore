@@ -4,7 +4,7 @@
 .LSOverride
 
 # Image Source Files
-.xcf
+*.xcf
 
 # Icon must end with two \r
 Icon

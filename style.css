@@ -169,11 +169,15 @@ footer {
 }
 
 .link-icon-box {
+  display: grid;
+  row-gap: 0.5rem;
   width: 4vw;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  left: 5px;
+  top: 0.25rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
+  z-index: 1;
 }
 
 .contact-icon {
