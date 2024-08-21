@@ -150,7 +150,7 @@ footer {
 }
 
 .splash {
-  background: url("images/96268719-DSC_5604sm.jpeg") fixed no-repeat;
+  background: url("images/96268719-DSC_5604.jpeg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -438,6 +438,11 @@ footer {
 @media (min-width: 768px) {
   .splash {
     background: url("images/96268719-DSC_5604.jpeg") fixed no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
   }
   .column3-container {
     gap: 2rem;
