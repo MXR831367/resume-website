@@ -437,7 +437,7 @@ footer {
 }
 @media (min-width: 768px) {
   .splash {
-    background: url("images/96268719-DSC_5604sm.jpeg") fixed no-repeat;
+    background: url("images/96268719-DSC_5604.jpeg") fixed no-repeat;
   }
   .column3-container {
     gap: 2rem;
