@@ -151,6 +151,9 @@ footer {
 
 .splash {
   background: url("images/96268719-DSC_5604.jpeg") fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: center;
   height: 100vh;
