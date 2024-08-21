@@ -5,7 +5,6 @@
 
 # Image Source Files
 *.xcf
-*.svg
 
 # Icon must end with two \r
 Icon
