@@ -46,7 +46,6 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(
             json.dumps(filtered_data, indent=True), status_code=200
         )
-        # return func.HttpResponse(str(666), status_code=200)
 
     except Exception as e:
         logging.error(f"Error accessing Cosmos DB: {e}")
