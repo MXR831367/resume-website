@@ -7,5 +7,6 @@
   "debug.internalConsoleOptions": "neverOpen",
   "azureFunctions.projectLanguageModel": 2,
   "azureFunctions.projectSubpath": "backend/azure-functions",
-  "azurite.location": "/backend/azure-functions/"
+  "azurite.location": "/backend/azure-functions/",
+  "liveServer.settings.root": "/frontend"
 }

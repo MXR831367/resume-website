@@ -2,10 +2,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
   getVisitCount();
 });
 
-const functionApi = "";
+const functionApi =
+  "https://mxr-website-counter.azurewebsites.net/api/count?id=1";
 
 const getVisitCount = () => {
   let count = 37;
+  console.log("getVisitCount started.")
   fetch(functionApi)
     .then((response) => {
       return response.json();
@@ -13,7 +15,7 @@ const getVisitCount = () => {
     .then((response) => {
       console.log("Website called function API.");
       count = response.count;
-      document.getElementById("counter").inntrText = count;
+      document.getElementById("counter").innerText = count;
     })
     .catch(function (error) {
       console.log(error);
