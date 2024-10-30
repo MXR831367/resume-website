@@ -1,22 +1,7 @@
-<p align="center">
-    <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="center" width="30%">
-</p>
-<p align="center"><h1 align="center">RESUME-WEBSITE.GIT</h1></p>
-<p align="center">
-	<em>Code your success story with style!</em>
-</p>
-<p align="center">
-	<img src="https://img.shields.io/github/license/MXR831367/resume-website.git?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
-	<img src="https://img.shields.io/github/last-commit/MXR831367/resume-website.git?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/MXR831367/resume-website.git?style=default&color=0080ff" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/MXR831367/resume-website.git?style=default&color=0080ff" alt="repo-language-count">
-</p>
-<p align="center"><!-- default option, no dependency badges. -->
-</p>
-<p align="center">
-	<!-- default option, no dependency badges. -->
-</p>
-<br>
+# [matthewroeder.com](https://www.matthewroeder.com)
+
+[![Azure Static Web Apps CI/CD](https://github.com/MXR831367/resume-website/actions/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml/badge.svg)](https://github.com/MXR831367/resume-website/actions/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml)
+[![Build and deploy Python project to Azure Function App - mxr-website-counter](https://github.com/MXR831367/resume-website/actions/workflows/main_mxr-website-counter(dev).yml/badge.svg)](https://github.com/MXR831367/resume-website/actions/workflows/main_mxr-website-counter(dev).yml)
 
 ##  Table of Contents
 
@@ -37,6 +22,9 @@
 ---
 
 ##  Overview
+
+> [!WARNING]
+> README is incomplete. Feel free to copy any code here but deployment instructions do not yet work.
 
 Resume-website.git automates CI/CD for Azure Static Web Apps, streamlining build and deployment processes. Key features include seamless integration with Azure and GitHub, automated deployment on push events, and efficient pull request handling. Ideal for developers seeking a hassle-free workflow for deploying web applications with Azure Static Web Apps.
 
@@ -306,14 +294,9 @@ Run the test suite using the following command:
 
 ---
 
-##  License
-
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
-
 ##  Acknowledgments
 
-- List any resources, contributors, inspiration, etc. here.
+- @LearnToCloud for inspiring me to finally do this.
+- @pascalvgemert for design inspiration.
 
 ---
