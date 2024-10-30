@@ -15,8 +15,9 @@ const getVisitCount = () => {
     .then((response) => {
       console.log("Website called function API.");
       count = response.count;
-      document.getElementsByClassName("countertext").innerText =
-        "VIEWS: " + count;
+      document.getElementsByClassName(
+        "countertext"
+      )[0].innerText = `VIEWS: ${count}`;
     })
     .catch(function (error) {
       console.log(error);
