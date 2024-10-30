@@ -7,7 +7,7 @@ const functionApi =
 
 const getVisitCount = () => {
   let count = 37;
-  console.log("getVisitCount started.")
+  console.log("getVisitCount started.");
   fetch(functionApi)
     .then((response) => {
       return response.json();
@@ -15,7 +15,8 @@ const getVisitCount = () => {
     .then((response) => {
       console.log("Website called function API.");
       count = response.count;
-      document.getElementById("counter").innerText = count;
+      document.getElementsByClassName("countertext").innerText =
+        "VIEWS: " + count;
     })
     .catch(function (error) {
       console.log(error);
