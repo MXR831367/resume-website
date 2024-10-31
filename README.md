@@ -1,4 +1,8 @@
-# [matthewroeder.com](https://www.matthewroeder.com)
+<p align="center">
+  <img src="https://matthewroeder.com/images/mxrlogo.svg">
+</p>
+
+# [My Resume Website on Azure](https://www.matthewroeder.com)
 
 [![Azure Static Web Apps CI/CD](https://github.com/MXR831367/resume-website/actions/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml/badge.svg)](https://github.com/MXR831367/resume-website/actions/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml)
 [![Build and deploy Python project to Azure Function App - mxr-website-counter](https://github.com/MXR831367/resume-website/actions/workflows/main_mxr-website-counter(dev).yml/badge.svg)](https://github.com/MXR831367/resume-website/actions/workflows/main_mxr-website-counter(dev).yml)
