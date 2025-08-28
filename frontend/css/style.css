@@ -1,52 +1,26 @@
-/* 
- * Matthew Roeder Resume Website
- * Main stylesheet
- */
-
-/* CSS Variables */
 :root {
-  /* Colors */
-  --primary-color: #a2e3c4;
-  --secondary-color: #94a99c;
-  --link-color: #317bd0;
-  --background-gray: #dddddd;
-  --text-color: #333333;
-  --white: #ffffff;
-  
-  /* Typography */
-  --body-font: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  --heading-font: "Norwester", sans-serif;
-  
-  /* Spacing */
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-xxl: 4rem;
-  
-  /* Other */
-  --border-radius: 0.25rem;
-  --transition-speed: 0.3s;
-  
-  font-family: var(--body-font);
-  color: var(--text-color);
+  --primarycolor: #a2e3c4;
+  --secondarycolor: #94a99c;
+  --linkcolor: #317bd0;
+  --backgroundgray: #dddddd;
+  font-family: "Work Sans", sans-serif;
 }
 
-/* Reset and Base Styles */
+/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Prevent font size inflation */
 html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
-  scroll-behavior: smooth;
 }
 
+/* Remove default margin in favour of better control in authored CSS */
 body,
 h1,
 h2,
@@ -58,43 +32,39 @@ blockquote,
 dl,
 dd {
   margin-block-start: 0;
+  /* margin-block-end: 0; */
 }
 
 body {
   margin: 0;
-  line-height: 1.6;
-}
-
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: var(--spacing-md);
-  line-height: 1.2;
 }
 
 h1 {
-  font-family: var(--heading-font);
+  font-family: "Norwester", sans-serif;
   font-weight: 400;
-  font-size: 2.875rem; /* 46px */
+  font-size: 46pt;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 0.625rem; /* 10px */
+  /* margin-top: 0; */
+  margin-bottom: 10px;
 }
 
 h2 {
   font-weight: 400;
-  font-size: 1rem; /* 16pt */
+  font-size: 16pt;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.0625rem; /* 1pt */
+  letter-spacing: 1pt;
+  /* margin: 0; */
 }
 
 h3 {
-  font-family: var(--heading-font);
+  font-family: "Norwester", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.0625rem; /* 1pt */
+  letter-spacing: 1pt;
 }
 
 h4 {
@@ -106,36 +76,27 @@ h4 {
 
 p {
   font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: var(--spacing-md);
+  line-height: 1.5rem;
   margin-block-end: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
 small {
-  color: var(--secondary-color);
+  color: var(--secondarycolor);
   font-size: 0.875rem;
   line-height: 1.25rem;
-  display: inline-block;
 }
 
 a {
-  color: var(--link-color);
-  text-decoration: none;
-  transition: color var(--transition-speed) ease;
-}
-
-a:hover, a:focus {
-  text-decoration: underline;
+  color: var(--linkcolor);
 }
 
 footer {
-  padding: var(--spacing-xl) var(--spacing-xxl);
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   font-size: 0.875rem;
-  color: var(--secondary-color);
+  color: var(--secondarycolor);
   text-align: center;
 }
 
@@ -188,64 +149,48 @@ footer {
   padding-bottom: 4rem;
 }
 
-/* Components */
-
-/* Splash header section */
 .splash {
   background: url("../images/96268719-DSC_5604.jpeg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: center;
   height: 100vh;
   height: 100svh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .splash-inner {
   height: 100%;
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  display: flex;
   position: absolute;
   top: 0;
-  z-index: 1;
 }
 
-/* Social and contact icons */
 .link-icon-box {
   display: grid;
-  row-gap: var(--spacing-sm);
+  row-gap: 0.5rem;
   width: 30px;
+  position: -webkit-sticky;
   position: sticky;
-  top: var(--spacing-xs);
-  left: var(--spacing-xs);
-  z-index: 10;
+  top: 0.25rem;
+  left: 0.25rem;
+  z-index: 1;
 }
 
 .contact-icon {
   width: 100%;
-  transition: transform var(--transition-speed) ease;
-  border-radius: var(--border-radius);
 }
 
-.contact-icon:hover {
-  transform: scale(1.1);
-}
-
-/* View counter */
 .countertext {
-  color: var(--white);
+  color: white;
   position: absolute;
-  bottom: var(--spacing-xs);
-  right: var(--spacing-xs);
-  font-size: 0.75rem;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  bottom: 0.25rem;
+  right: 0.25rem;
 }
 
 .page-container {
@@ -381,25 +326,20 @@ footer {
   flex-shrink: 0;
 }
 
-/* Skill bars */
 .skill-container {
   min-width: 8rem;
-  height: 0.75rem;
+  height: 1rem;
   margin-left: 1rem;
-  background-color: var(--background-gray);
-  border-radius: 0.375rem;
-  overflow: hidden;
-  position: relative;
+  background-color: var(--backgroundgray);
 }
 
 .skills {
+  font-size: smaller;
   height: 100%;
-  background-color: var(--secondary-color);
-  transition: width 1s ease-in-out;
-  border-radius: 0.375rem;
+  background-color: var(--secondarycolor);
 }
 
-/* Individual skill percentages */
+/* technical skills */
 .netframe {
   width: 93%;
 }
