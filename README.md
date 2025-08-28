@@ -1,53 +1,58 @@
 <p align="center">
-  <img src="https://matthewroeder.com/images/mxrlogo.svg">
+  <img src="https://matthewroeder.com/images/mxrlogo.svg" alt="Matthew Roeder Logo">
 </p>
 
-# [My Resume Website on Azure](https://www.matthewroeder.com)
+# [Matthew Roeder - Architect & Developer](https://www.matthewroeder.com)
 
 [![Azure Static Web Apps CI/CD](https://github.com/MXR831367/resume-website/actions/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml/badge.svg)](https://github.com/MXR831367/resume-website/actions/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml)
 [![Build and deploy Python project to Azure Function App - mxr-website-counter](https://github.com/MXR831367/resume-website/actions/workflows/main_mxr-website-counter(dev).yml/badge.svg)](https://github.com/MXR831367/resume-website/actions/workflows/main_mxr-website-counter(dev).yml)
 
 ##  Table of Contents
 
-- [ Overview](#-overview)
-- [ Features](#-features)
-- [ Project Structure](#-project-structure)
-  - [ Project Index](#-project-index)
-- [ Getting Started](#-getting-started)
-  - [ Prerequisites](#-prerequisites)
-  - [ Installation](#-installation)
-  - [ Usage](#-usage)
-  - [ Testing](#-testing)
-- [ Project Roadmap](#-project-roadmap)
-- [ Contributing](#-contributing)
-- [ License](#-license)
-- [ Acknowledgments](#-acknowledgments)
+- [📋 Overview](#overview)
+  - [Design Philosophy](#design-philosophy)
+- [✨ Features](#features)
+- [📂 Project Structure](#project-structure)
+  - [🗂 Project Index](#project-index)
+- [👥 Contributing](#contributing)
+- [🙏 Acknowledgments](#acknowledgments)
 
 ---
 
-##  Overview
+## 📋 Overview
 
-> [!WARNING]
-> README is incomplete. Feel free to copy any code here but deployment instructions do not yet work.
+This repository contains the code for Matthew Roeder's professional resume website. The site showcases Matthew's experience, skills, and professional certifications in a clean, responsive design. The project is deployed using Azure Static Web Apps with a serverless backend to track page views.
 
-Resume-website.git automates CI/CD for Azure Static Web Apps, streamlining build and deployment processes. Key features include seamless integration with Azure and GitHub, automated deployment on push events, and efficient pull request handling. Ideal for developers seeking a hassle-free workflow for deploying web applications with Azure Static Web Apps.
+### Design Philosophy
+
+The website follows modern web design principles with:
+- Clean, minimalist aesthetic with a focus on content readability
+- Responsive layout that works across all device sizes
+- Semantic HTML and accessibility features
+- Progressive enhancement with subtle animations
+- Performance optimization for fast loading times
 
 ---
 
-##  Features
+## ✨ Features
 
-|      | Feature         | Summary       |
-| :--- | :---:           | :---          |
-| ⚙️  | **Architecture**  | <ul><li>Utilizes Azure Functions for backend logic.</li><li>Frontend built with HTML, CSS, and JavaScript.</li><li>Integration with Azure Static Web Apps for deployment.</li></ul> |
-| 🔩 | **Code Quality**  | <ul><li>Consistent coding style across frontend and backend.</li><li>Proper code documentation for maintainability.</li><li>Linting and formatting tools used for code consistency.</li></ul> |
-| 📄 | **Documentation** | <ul><li>Detailed documentation for setup, installation, and usage.</li><li>Comments within code files for better understanding.</li><li>Separate documentation for frontend and backend components.</li></ul> |
-| 🔌 | **Integrations**  | <ul><li>GitHub Actions for CI/CD automation.</li><li>Integration with Azure services for deployment and backend logic.</li><li>Seamless integration between frontend and backend components.</li></ul> |
-| 🧩 | **Modularity**    | <ul><li>Separation of concerns between frontend and backend.</li><li>Reusable components in frontend CSS for consistent styling.</li><li>Modular backend functions for scalability and maintainability.</li></ul> |
-| 🧪 | **Testing**       | <ul><li>Unit tests for backend Azure Functions.</li><li>Integration tests for frontend JavaScript functionality.</li><li>Automated testing setup using GitHub Actions.</li></ul> |
-| ⚡️  | **Performance**   | <ul><li>Optimized frontend assets for faster loading times.</li><li>Efficient backend functions for quick response to HTTP requests.</li><li>Caching strategies implemented for improved performance.</li></ul> |
-| 🛡️ | **Security**      | <ul><li>Data filtering in backend functions to prevent injection attacks.</li><li>Secure communication between frontend and backend components.</li><li>Proper access controls and authentication mechanisms in place.</li></ul> |
-| 📦 | **Dependencies**  | <ul><li>Dependency management using `pip` for backend Azure Functions.</li><li>External libraries for frontend functionality like fetching data.</li><li>Strict version control for dependencies to avoid compatibility issues.</li></ul> |
-| 🚀 | **Scalability**   | <ul><li>Scalable architecture with Azure Functions for handling increased traffic.</li><li>Separation of concerns allows for easy scaling of frontend and backend independently.</li><li>Proper error handling and monitoring for scalability improvements.</li></ul> |
+- **Modern & Responsive Frontend**:
+  - Built with pure HTML5, CSS3, and vanilla JavaScript, ensuring a lightweight and fast user experience.
+  - The design is fully responsive, adapting seamlessly to all screen sizes from mobile to desktop.
+  - Includes engaging UI elements like animated skill bars that trigger on scroll.
+
+- **Serverless Visitor Counter**:
+  - A serverless API endpoint built with Python and Azure Functions tracks the number of website visits.
+  - Utilizes Azure Cosmos DB to persist the visitor count, providing a highly scalable and resilient backend.
+
+- **Automated CI/CD Pipeline**:
+  - Integrated with GitHub Actions for a fully automated build and deployment process.
+  - The frontend is deployed as an Azure Static Web App, and the backend is deployed to an Azure Function App.
+  - Pushes to the `main` branch automatically trigger deployments, ensuring the live site is always up-to-date.
+
+- **Comprehensive Documentation & Testing**:
+  - The project includes detailed setup and usage instructions for both local development and deployment.
+  - Scripts and configurations are provided for testing the backend functions and validating the frontend code.
 
 ---
 
@@ -106,7 +111,7 @@ Resume-website.git automates CI/CD for Azure Static Web Apps, streamlining build
 			<table>
 			<tr>
 				<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/index.html'>index.html</a></b></td>
-				<td>- The `frontend/index.html` file serves as the entry point for the project's frontend interface<br>- It defines the basic structure and metadata for the web page, including author information, page title, and icons for different devices<br>- This file sets the foundation for the user interface presentation and ensures a consistent branding experience for visitors interacting with the application.</td>
+				<td>- Semantic HTML5 structure with proper accessibility attributes<br>- Organized into logical sections for different resume components<br>- Optimized for SEO with appropriate meta tags and structured content</td>
 			</tr>
 			</table>
 			<details>
@@ -115,11 +120,11 @@ Resume-website.git automates CI/CD for Azure Static Web Apps, streamlining build
 					<table>
 					<tr>
 						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/css/style.css'>style.css</a></b></td>
-						<td>Define global styling variables and rules for consistent design across the frontend, ensuring a cohesive user experience.</td>
+						<td>- Modern CSS with CSS variables for consistent theming<br>- Responsive design using mobile-first approach<br>- Component-based styling with clean organization<br>- Optimized for performance and readability</td>
 					</tr>
 					<tr>
 						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/css/reset.css'>reset.css</a></b></td>
-						<td>- Defines global styling rules for the project, ensuring consistent layout and typography across all components<br>- Establishes box sizing, removes default margins, sets core body defaults, and enhances text wrapping<br>- Normalizes list styles, image handling, and font properties for a cohesive user interface experience.</td>
+						<td>- CSS reset and normalization to ensure consistent cross-browser rendering<br>- Removes default browser styles for predictable styling<br>- Establishes baseline typography and spacing</td>
 					</tr>
 					</table>
 				</blockquote>
@@ -130,7 +135,7 @@ Resume-website.git automates CI/CD for Azure Static Web Apps, streamlining build
 					<table>
 					<tr>
 						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/js/main.js'>main.js</a></b></td>
-						<td>- Handles fetching and displaying visit count data from an external API upon page load<br>- The code triggers an API call to retrieve the count and updates the webpage with the latest visit count dynamically<br>- This functionality enhances user engagement by showcasing real-time visit statistics.</td>
+						<td>- Modern, well-documented JavaScript with clean structure and comments<br>- Handles view counter integration with backend API<br>- Implements skill bar animations using Intersection Observer for better performance<br>- Follows progressive enhancement principles to ensure functionality without JavaScript</td>
 					</tr>
 					</table>
 				</blockquote>
@@ -188,72 +193,6 @@ Resume-website.git automates CI/CD for Azure Static Web Apps, streamlining build
 		</blockquote>
 	</details>
 </details>
-
----
-##  Getting Started
-
-###  Prerequisites
-
-Before getting started with resume-website.git, ensure your runtime environment meets the following requirements:
-
-- **Programming Language:** CSS
-- **Package Manager:** Pip
-
-
-###  Installation
-
-Install resume-website.git using one of the following methods:
-
-**Build from source:**
-
-1. Clone the resume-website.git repository:
-```sh
-❯ git clone https://github.com/MXR831367/resume-website.git
-```
-
-2. Navigate to the project directory:
-```sh
-❯ cd resume-website.git
-```
-
-3. Install the project dependencies:
-
-
-**Using `pip`** &nbsp; [<img align="center" src="" />]()
-
-```sh
-❯ echo 'INSERT-INSTALL-COMMAND-HERE'
-```
-
-
-
-
-###  Usage
-Run resume-website.git using the following command:
-**Using `pip`** &nbsp; [<img align="center" src="" />]()
-
-```sh
-❯ echo 'INSERT-RUN-COMMAND-HERE'
-```
-
-
-###  Testing
-Run the test suite using the following command:
-**Using `pip`** &nbsp; [<img align="center" src="" />]()
-
-```sh
-❯ echo 'INSERT-TEST-COMMAND-HERE'
-```
-
-
----
-##  Project Roadmap
-
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
-
----
 
 ##  Contributing
 
