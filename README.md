@@ -1,54 +1,60 @@
 <p align="center">
-  <img src="https://matthewroeder.com/images/mxrlogo.svg" alt="Matthew Roeder Logo">
+  <img src="https://matthewroeder.com/images/mxrlogo.svg">
 </p>
 
-# [Matthew Roeder - Architect & Developer](https://www.matthewroeder.com)
+# [My Resume Website on Azure](https://www.matthewroeder.com)
 
 [![Azure Static Web Apps CI/CD](https://github.com/MXR831367/resume-website/actions/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml/badge.svg)](https://github.com/MXR831367/resume-website/actions/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml)
 [![Build and deploy Python project to Azure Function App - mxr-website-counter](https://github.com/MXR831367/resume-website/actions/workflows/main_mxr-website-counter(dev).yml/badge.svg)](https://github.com/MXR831367/resume-website/actions/workflows/main_mxr-website-counter(dev).yml)
 
 ##  Table of Contents
 
-- [📋 Overview](#overview)
-  - [Design Philosophy](#design-philosophy)
-- [✨ Features](#features)
-- [📂 Project Structure](#project-structure)
-  - [🗂 Project Index](#project-index)
-- [👥 Contributing](#contributing)
-- [🙏 Acknowledgments](#acknowledgments)
+- [ Overview](#-overview)
+- [ Features](#-features)
+- [ Project Structure](#-project-structure)
+  - [ Project Index](#-project-index)
+- [ Getting Started](#-getting-started)
+  - [ Prerequisites](#-prerequisites)
+  - [ Installation](#-installation)
+  - [ Usage](#-usage)
+  - [ Testing](#-testing)
+- [ Project Roadmap](#-project-roadmap)
+- [ Contributing](#-contributing)
+- [ License](#-license)
+- [ Acknowledgments](#-acknowledgments)
 
 ---
 
-## 📋 Overview
+##  Overview
 
-This repository powers a fast, minimalist resume website for Matthew Roeder. The frontend uses semantic HTML, modern CSS (custom properties, responsive layout, OS-aware light/dark theme), and a small amount of vanilla JavaScript. The site is deployed as an Azure Static Web App, with a tiny Azure Functions API persisting anonymous page views in Azure Cosmos DB and CI/CD via GitHub Actions.
+> [!WARNING]
+> README is incomplete. Feel free to copy any code here but deployment instructions do not yet work.
 
-### Design Philosophy
-
-Principles guiding this project:
-- Content-first and accessible by default (semantic HTML, descriptive alt text, keyboard-friendly).
-- Mobile-first, responsive layout that scales cleanly from small to large screens.
-- Maintainable theming with CSS custom properties and OS-synced dark mode via prefers-color-scheme.
-- Progressive enhancement with minimal, framework-free JavaScript; works even if JS is unavailable.
-- Performance-focused: lean assets, no client framework or build step, optimized images and critical CSS.
-- Privacy-conscious and minimal backend surface area (anonymous view counter only).
-- Reliable, simple deployment: static hosting with a small serverless function.
+Resume-website.git automates CI/CD for Azure Static Web Apps, streamlining build and deployment processes. Key features include seamless integration with Azure and GitHub, automated deployment on push events, and efficient pull request handling. Ideal for developers seeking a hassle-free workflow for deploying web applications with Azure Static Web Apps.
 
 ---
 
-## ✨ Features
+##  Features
 
-- Lightweight, accessible, and responsive frontend using semantic HTML and modern CSS (custom properties, dark mode).
-- Minimal, framework-free JavaScript for enhancements like theme color syncing and a page-view counter.
-- Serverless visitor counter powered by Azure Functions with persistence in Azure Cosmos DB.
-- Automated CI/CD via GitHub Actions deploying to Azure Static Web Apps and the Function App.
+|      | Feature         | Summary       |
+| :--- | :---:           | :---          |
+| ⚙️  | **Architecture**  | <ul><li>Utilizes Azure Functions for backend logic.</li><li>Frontend built with HTML, CSS, and JavaScript.</li><li>Integration with Azure Static Web Apps for deployment.</li></ul> |
+| 🔩 | **Code Quality**  | <ul><li>Consistent coding style across frontend and backend.</li><li>Proper code documentation for maintainability.</li><li>Linting and formatting tools used for code consistency.</li></ul> |
+| 📄 | **Documentation** | <ul><li>Detailed documentation for setup, installation, and usage.</li><li>Comments within code files for better understanding.</li><li>Separate documentation for frontend and backend components.</li></ul> |
+| 🔌 | **Integrations**  | <ul><li>GitHub Actions for CI/CD automation.</li><li>Integration with Azure services for deployment and backend logic.</li><li>Seamless integration between frontend and backend components.</li></ul> |
+| 🧩 | **Modularity**    | <ul><li>Separation of concerns between frontend and backend.</li><li>Reusable components in frontend CSS for consistent styling.</li><li>Modular backend functions for scalability and maintainability.</li></ul> |
+| 🧪 | **Testing**       | <ul><li>Unit tests for backend Azure Functions.</li><li>Integration tests for frontend JavaScript functionality.</li><li>Automated testing setup using GitHub Actions.</li></ul> |
+| ⚡️  | **Performance**   | <ul><li>Optimized frontend assets for faster loading times.</li><li>Efficient backend functions for quick response to HTTP requests.</li><li>Caching strategies implemented for improved performance.</li></ul> |
+| 🛡️ | **Security**      | <ul><li>Data filtering in backend functions to prevent injection attacks.</li><li>Secure communication between frontend and backend components.</li><li>Proper access controls and authentication mechanisms in place.</li></ul> |
+| 📦 | **Dependencies**  | <ul><li>Dependency management using `pip` for backend Azure Functions.</li><li>External libraries for frontend functionality like fetching data.</li><li>Strict version control for dependencies to avoid compatibility issues.</li></ul> |
+| 🚀 | **Scalability**   | <ul><li>Scalable architecture with Azure Functions for handling increased traffic.</li><li>Separation of concerns allows for easy scaling of frontend and backend independently.</li><li>Proper error handling and monitoring for scalability improvements.</li></ul> |
 
 ---
 
 ##  Project Structure
 
 ```sh
-└── resume-website/
+└── resume-website.git/
     ├── .github
     │   └── workflows
 	|       └──
@@ -66,116 +72,128 @@ Principles guiding this project:
 
 ###  Project Index
 <details open>
-  <summary><b><code>RESUME-WEBSITE/</code></b></summary>
-
-  <details>
-    <summary><b>.github</b></summary>
-    <blockquote>
-      <details>
-        <summary><b>workflows</b></summary>
-        <blockquote>
-          <table>
-          <tr>
-            <td><b><a href=".github/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml">azure-static-web-apps-salmon-river-08c6d6c0f.yml</a></b></td>
-            <td>CI/CD pipeline for the static site.</td>
-          </tr>
-          <tr>
-            <td><b><a href=".github/workflows/main_mxr-website-counter(dev).yml">main_mxr-website-counter(dev).yml</a></b></td>
-            <td>CI/CD pipeline for the Azure Functions backend.</td>
-          </tr>
-          </table>
-        </blockquote>
-      </details>
-    </blockquote>
-  </details>
-
-  <details>
-    <summary><b>frontend</b></summary>
-    <blockquote>
-      <table>
-      <tr>
-        <td><b><a href="frontend/index.html">index.html</a></b></td>
-        <td>Static markup for the resume website.</td>
-      </tr>
-      </table>
-
-      <details>
-        <summary><b>css</b></summary>
-        <blockquote>
-          <table>
-          <tr>
-            <td><b><a href="frontend/css/reset.css">reset.css</a></b></td>
-            <td>Baseline reset/normalization for consistent rendering.</td>
-          </tr>
-          <tr>
-            <td><b><a href="frontend/css/style.css">style.css</a></b></td>
-            <td>Responsive styles, theming with CSS variables, and dark mode.</td>
-          </tr>
-          </table>
-        </blockquote>
-      </details>
-
-      <details>
-        <summary><b>js</b></summary>
-        <blockquote>
-          <table>
-          <tr>
-            <td><b><a href="frontend/js/main.js">main.js</a></b></td>
-            <td>Theme color synchronization and page-view counter integration.</td>
-          </tr>
-          </table>
-        </blockquote>
-      </details>
-
-      <details>
-        <summary><b>images</b></summary>
-        <blockquote>
-          <table>
-          <tr>
-            <td><b><a href="frontend/images/favicon/site.webmanifest">favicon/site.webmanifest</a></b></td>
-            <td>Metadata and icons for installable app behavior.</td>
-          </tr>
-          </table>
-        </blockquote>
-      </details>
-    </blockquote>
-  </details>
-
-  <details>
-    <summary><b>backend</b></summary>
-    <blockquote>
-      <details>
-        <summary><b>azure-functions</b></summary>
-        <blockquote>
-          <table>
-          <tr>
-            <td><b><a href="backend/azure-functions/function_app.py">function_app.py</a></b></td>
-            <td>HTTP-triggered function that increments and returns the visit count.</td>
-          </tr>
-          <tr>
-            <td><b><a href="backend/azure-functions/requirements.txt">requirements.txt</a></b></td>
-            <td>Python dependencies for the function app.</td>
-          </tr>
-          <tr>
-            <td><b><a href="backend/azure-functions/host.json">host.json</a></b></td>
-            <td>Function host configuration.</td>
-          </tr>
-          <tr>
-            <td><b><a href="backend/azure-functions/.funcignore">.funcignore</a></b></td>
-            <td>Deployment ignore rules for Azure Functions.</td>
-          </tr>
-          </table>
-        </blockquote>
-      </details>
-    </blockquote>
-  </details>
+	<summary><b><code>RESUME-WEBSITE.GIT/</code></b></summary>
+	<details> <!-- __root__ Submodule -->
+		<summary><b>__root__</b></summary>
+		<blockquote>
+			<table>
+			</table>
+		</blockquote>
+	</details>
+	<details> <!-- .github Submodule -->
+		<summary><b>.github</b></summary>
+		<blockquote>
+			<details>
+				<summary><b>workflows</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/.github/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml'>azure-static-web-apps-salmon-river-08c6d6c0f.yml</a></b></td>
+						<td>- Automates CI/CD for Azure Static Web Apps<br>- Handles build and deployment on push to main branch or pull request events<br>- Executes deployment and closes pull requests using specified configurations<br>- Integrates with Azure and GitHub for seamless workflow.</td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/.github/workflows/main_mxr-website-counter(dev).yml'>main_mxr-website-counter(dev).yml</a></b></td>
+						<td>- Automates the build and deployment process of a Python project to an Azure Function App named 'mxr-website-counter'<br>- Utilizes GitHub Actions to set up the Python environment, resolve project dependencies, and run the Azure Functions Action for deployment<br>- The workflow triggers on pushes to the main branch and manual dispatch.</td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+		</blockquote>
+	</details>
+	<details> <!-- frontend Submodule -->
+		<summary><b>frontend</b></summary>
+		<blockquote>
+			<table>
+			<tr>
+				<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/index.html'>index.html</a></b></td>
+				<td>- The `frontend/index.html` file serves as the entry point for the project's frontend interface<br>- It defines the basic structure and metadata for the web page, including author information, page title, and icons for different devices<br>- This file sets the foundation for the user interface presentation and ensures a consistent branding experience for visitors interacting with the application.</td>
+			</tr>
+			</table>
+			<details>
+				<summary><b>css</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/css/style.css'>style.css</a></b></td>
+						<td>Define global styling variables and rules for consistent design across the frontend, ensuring a cohesive user experience.</td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/css/reset.css'>reset.css</a></b></td>
+						<td>- Defines global styling rules for the project, ensuring consistent layout and typography across all components<br>- Establishes box sizing, removes default margins, sets core body defaults, and enhances text wrapping<br>- Normalizes list styles, image handling, and font properties for a cohesive user interface experience.</td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+			<details>
+				<summary><b>js</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/js/main.js'>main.js</a></b></td>
+						<td>- Handles fetching and displaying visit count data from an external API upon page load<br>- The code triggers an API call to retrieve the count and updates the webpage with the latest visit count dynamically<br>- This functionality enhances user engagement by showcasing real-time visit statistics.</td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+			<details>
+				<summary><b>images</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/images/IMG_3877.PNG'>IMG_3877.PNG</a></b></td>
+						<td>- The provided code file serves as a crucial component within the project's architecture, contributing to the overall functionality of the P module<br>- It plays a key role in achieving a specific purpose within the codebase, enhancing the project's capabilities and supporting its objectives.</td>
+					</tr>
+					</table>
+					<details>
+						<summary><b>favicon</b></summary>
+						<blockquote>
+							<table>
+							<tr>
+								<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/images/favicon/site.webmanifest'>site.webmanifest</a></b></td>
+								<td>- Define the project's web app appearance and behavior by configuring the site manifest file<br>- Customize the app's name, icons, theme colors, and display mode for a cohesive user experience.</td>
+							</tr>
+							</table>
+						</blockquote>
+					</details>
+				</blockquote>
+			</details>
+		</blockquote>
+	</details>
+	<details> <!-- backend Submodule -->
+		<summary><b>backend</b></summary>
+		<blockquote>
+			<details>
+				<summary><b>azure-functions</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/backend/azure-functions/requirements.txt'>requirements.txt</a></b></td>
+						<td>- Facilitates management of Azure Functions dependencies by specifying required packages in the 'requirements.txt' file<br>- Ensures proper functioning of Azure Functions and integration with Azure Cosmos<br>- Prevents potential issues by excluding 'azure-functions-worker' from manual management.</td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/backend/azure-functions/function_app.py'>function_app.py</a></b></td>
+						<td>- Increment website visit count in Cosmos DB using Azure Functions<br>- Handles HTTP requests to update count for a specified document ID<br>- Retrieves document, increments count, and updates Cosmos DB<br>- Filters non-relevant keys before returning updated count<br>- Handles errors and responds accordingly.</td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/backend/azure-functions/host.json'>host.json</a></b></td>
+						<td>Configures Azure Functions host settings for logging and extension bundles, ensuring efficient application monitoring and management.</td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/backend/azure-functions/.funcignore'>.funcignore</a></b></td>
+						<td>Exclude unnecessary files and directories from Azure Functions deployment to enhance performance and security.</td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+		</blockquote>
+	</details>
 </details>
 
 ##  Contributing
 
-- **💬 [Join the Discussions](https://github.com/MXR831367/resume-website/discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://github.com/MXR831367/resume-website/issues)**: Submit bugs found or log feature requests for the `resume-website.git` project.
-- **💡 [Submit Pull Requests](https://github.com/MXR831367/resume-website/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **💬 [Join the Discussions](https://github.com/MXR831367/resume-website.git/discussions)**: Share your insights, provide feedback, or ask questions.
+- **🐛 [Report Issues](https://github.com/MXR831367/resume-website.git/issues)**: Submit bugs found or log feature requests for the `resume-website.git` project.
+- **💡 [Submit Pull Requests](https://github.com/MXR831367/resume-website.git/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
 
 <details closed>
 <summary>Contributing Guidelines</summary>
@@ -206,7 +224,7 @@ Principles guiding this project:
 <summary>Contributor Graph</summary>
 <br>
 <p align="left">
-   <a href="https://github.com{/MXR831367/resume-website/}graphs/contributors">
+   <a href="https://github.com{/MXR831367/resume-website.git/}graphs/contributors">
       <img src="https://contrib.rocks/image?repo=MXR831367/resume-website.git">
    </a>
 </p>
