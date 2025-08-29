@@ -1,8 +1,8 @@
-<p align="center">
-  <img src="https://matthewroeder.com/images/mxrlogo.svg">
+<p>
+  <a href="https://www.matthewroeder.com">
+    <img src="https://matthewroeder.com/images/mxrlogo.svg" alt="Matthew Roeder Logo">
+  </a>
 </p>
-
-# [My Resume Website on Azure](https://www.matthewroeder.com)
 
 [![Azure Static Web Apps CI/CD](https://github.com/MXR831367/resume-website/actions/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml/badge.svg)](https://github.com/MXR831367/resume-website/actions/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml)
 [![Build and deploy Python project to Azure Function App - mxr-website-counter](https://github.com/MXR831367/resume-website/actions/workflows/main_mxr-website-counter(dev).yml/badge.svg)](https://github.com/MXR831367/resume-website/actions/workflows/main_mxr-website-counter(dev).yml)
@@ -13,12 +13,6 @@
 - [ Features](#-features)
 - [ Project Structure](#-project-structure)
   - [ Project Index](#-project-index)
-- [ Getting Started](#-getting-started)
-  - [ Prerequisites](#-prerequisites)
-  - [ Installation](#-installation)
-  - [ Usage](#-usage)
-  - [ Testing](#-testing)
-- [ Project Roadmap](#-project-roadmap)
 - [ Contributing](#-contributing)
 - [ License](#-license)
 - [ Acknowledgments](#-acknowledgments)
@@ -27,27 +21,33 @@
 
 ##  Overview
 
-> [!WARNING]
-> README is incomplete. Feel free to copy any code here but deployment instructions do not yet work.
-
-Resume-website.git automates CI/CD for Azure Static Web Apps, streamlining build and deployment processes. Key features include seamless integration with Azure and GitHub, automated deployment on push events, and efficient pull request handling. Ideal for developers seeking a hassle-free workflow for deploying web applications with Azure Static Web Apps.
+resume-website is a personal portfolio/resume site deployed on Azure Static Web Apps. It combines a fast, static frontend with a lightweight serverless backend for small dynamic needs (such as counting visits), and ships through GitHub Actions to both preview and production environments. The repository demonstrates a pragmatic, low‑maintenance pattern for building and releasing content‑focused sites on Azure with clear separation between the frontend and backend.
 
 ---
 
 ##  Features
 
-|      | Feature         | Summary       |
-| :--- | :---:           | :---          |
-| ⚙️  | **Architecture**  | <ul><li>Utilizes Azure Functions for backend logic.</li><li>Frontend built with HTML, CSS, and JavaScript.</li><li>Integration with Azure Static Web Apps for deployment.</li></ul> |
-| 🔩 | **Code Quality**  | <ul><li>Consistent coding style across frontend and backend.</li><li>Proper code documentation for maintainability.</li><li>Linting and formatting tools used for code consistency.</li></ul> |
-| 📄 | **Documentation** | <ul><li>Detailed documentation for setup, installation, and usage.</li><li>Comments within code files for better understanding.</li><li>Separate documentation for frontend and backend components.</li></ul> |
-| 🔌 | **Integrations**  | <ul><li>GitHub Actions for CI/CD automation.</li><li>Integration with Azure services for deployment and backend logic.</li><li>Seamless integration between frontend and backend components.</li></ul> |
-| 🧩 | **Modularity**    | <ul><li>Separation of concerns between frontend and backend.</li><li>Reusable components in frontend CSS for consistent styling.</li><li>Modular backend functions for scalability and maintainability.</li></ul> |
-| 🧪 | **Testing**       | <ul><li>Unit tests for backend Azure Functions.</li><li>Integration tests for frontend JavaScript functionality.</li><li>Automated testing setup using GitHub Actions.</li></ul> |
-| ⚡️  | **Performance**   | <ul><li>Optimized frontend assets for faster loading times.</li><li>Efficient backend functions for quick response to HTTP requests.</li><li>Caching strategies implemented for improved performance.</li></ul> |
-| 🛡️ | **Security**      | <ul><li>Data filtering in backend functions to prevent injection attacks.</li><li>Secure communication between frontend and backend components.</li><li>Proper access controls and authentication mechanisms in place.</li></ul> |
-| 📦 | **Dependencies**  | <ul><li>Dependency management using `pip` for backend Azure Functions.</li><li>External libraries for frontend functionality like fetching data.</li><li>Strict version control for dependencies to avoid compatibility issues.</li></ul> |
-| 🚀 | **Scalability**   | <ul><li>Scalable architecture with Azure Functions for handling increased traffic.</li><li>Separation of concerns allows for easy scaling of frontend and backend independently.</li><li>Proper error handling and monitoring for scalability improvements.</li></ul> |
+- End-to-end CI/CD with GitHub Actions
+  - Automated deploys to Azure Static Web Apps on push
+  - Preview environments for pull requests before merging
+- Static, fast frontend
+  - Semantic HTML, responsive CSS, and minimal JavaScript for great performance
+- Serverless backend
+  - Python Azure Functions power small dynamic features (e.g., a visit counter)
+  - Simple HTTP-triggered function pattern
+- Data layer
+  - Integrates with Azure Cosmos DB for persistence where needed
+- Security and configuration
+  - Secrets stored in GitHub and Azure App Settings; no secrets committed
+  - Input validation and constrained CORS for API endpoints
+- Performance
+  - Global CDN via Static Web Apps and cache-friendly static assets
+- Observability
+  - Structured logs with support for Application Insights
+- Scalability and cost
+  - Serverless, auto-scaling components with pay‑per‑use pricing
+- Local development
+  - Run the static site and Azure Functions locally for quick iteration
 
 ---
 
