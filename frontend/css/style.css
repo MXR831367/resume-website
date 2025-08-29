@@ -114,6 +114,11 @@ footer {
   text-align: center;
 }
 
+/* Hidden by default; becomes visible on small screens to force a newline */
+footer .footer-break {
+  display: none;
+}
+
 .lh-8half {
   line-height: 2.125;
 }
@@ -507,5 +512,15 @@ footer {
 @media (min-width: 920px) {
   .column3-container {
     max-width: 920px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* On small screens, replace the separator bar with a newline */
+  footer .footer-sep {
+    display: none;
+  }
+  footer .footer-break {
+    display: block;
   }
 }
