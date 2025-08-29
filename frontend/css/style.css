@@ -108,10 +108,7 @@ a {
 }
 
 footer {
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 4rem;
   font-size: 0.875rem;
   color: var(--secondarycolor);
   text-align: center;
@@ -167,8 +164,7 @@ footer {
 }
 
 .splash {
-  background-color: var(--primarycolor); /* this is the color layer */
-  height: 100vh;
+  background-color: var(--primarycolor);
   height: 100svh;
   position: relative;
   isolation: isolate;
@@ -227,7 +223,6 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100svh;
   min-height: 100vh;
   display: flex;
 }
@@ -252,10 +247,7 @@ footer {
 }
 
 .section-header {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
   background-color: var(--primarycolor);
   display: inline-block;
   margin-top: 0;
