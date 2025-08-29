@@ -8,17 +8,19 @@
   --bullet-background: #fff;
   font-family: "Work Sans", sans-serif;
 }
+
 @media (prefers-color-scheme: dark) {
-    :root {
-        --primarycolor: #418a69;
-        --secondarycolor: #b8c5be;
-        --linkcolor: #5a94dc;
-        --backgroundgray: #343a40;
-        --background-color: #212529;
-        --text-color: #f8f9fa;
-        --bullet-background: var(--background-color);
-    }
+  :root {
+    --primarycolor: #418a69;
+    --secondarycolor: #b8c5be;
+    --linkcolor: #5a94dc;
+    --backgroundgray: #343a40;
+    --background-color: #212529;
+    --text-color: #f8f9fa;
+    --bullet-background: var(--background-color);
+  }
 }
+
 /* Box sizing rules */
 *,
 *::before,
@@ -165,11 +167,11 @@ footer {
 }
 
 .splash {
-    background-color: var(--primarycolor); /* this is the color layer */
-    height: 100vh;
-    height: 100svh;
-    position: relative;
-    isolation: isolate;
+  background-color: var(--primarycolor); /* this is the color layer */
+  height: 100vh;
+  height: 100svh;
+  position: relative;
+  isolation: isolate;
 }
 
 .splash::before {
@@ -181,7 +183,7 @@ footer {
   height: 100%;
   background: url("../images/96268719-DSC_5604.jpeg") no-repeat center/cover;
   mix-blend-mode: multiply;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .splash-inner {
@@ -200,7 +202,7 @@ footer {
   row-gap: 0.5rem;
   width: 30px;
   /* Remove this line: position: -webkit-sticky; */
-    position: sticky;
+  position: sticky;
   top: 0.25rem;
   left: 0.25rem;
   z-index: 1;
@@ -208,8 +210,8 @@ footer {
 
 .contact-icon {
   width: 100%;
-    mix-blend-mode: multiply;
-    opacity: .4;
+  mix-blend-mode: multiply;
+  opacity: 0.4;
 }
 
 .countertext {

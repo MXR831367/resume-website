@@ -24,3 +24,16 @@ const getVisitCount = () => {
     });
   return count;
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Get the computed value of the CSS variable
+  const themeColor = getComputedStyle(document.documentElement)
+    .getPropertyValue("--primary-color")
+    .trim();
+
+  // Find the meta tag and update its content
+  const metaTag = document.getElementById("theme-color-meta");
+  if (metaTag) {
+    metaTag.setAttribute("content", themeColor);
+  }
+});
