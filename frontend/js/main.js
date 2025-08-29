@@ -41,11 +41,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Update theme color if OS theme changes
     const mq = window.matchMedia("(prefers-color-scheme: dark)");
-    if (typeof mq.addEventListener === "function") {
-        mq.addEventListener("change", setThemeColor);
-    } else if (typeof mq.addListener === "function") {
-        mq.addListener(setThemeColor);
-    }
+
+    // Use addEventListener directly, as it's the standard
+    mq.addEventListener("change", setThemeColor);
 
     // Call your existing function to get the visit count
     getVisitCount();
