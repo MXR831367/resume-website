@@ -9,13 +9,12 @@
 
 ##  Table of Contents
 
-- [ Overview](#-overview)
-- [ Features](#-features)
-- [ Project Structure](#-project-structure)
-  - [ Project Index](#-project-index)
-- [ Contributing](#-contributing)
-- [ License](#-license)
-- [ Acknowledgments](#-acknowledgments)
+- [Overview](#overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+  - [Project Index](#project-index)
+- [Contributing](#contributing)
+- [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -88,11 +87,11 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 				<blockquote>
 					<table>
 					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/.github/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml'>azure-static-web-apps-salmon-river-08c6d6c0f.yml</a></b></td>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/.github/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml'>azure-static-web-apps-salmon-river-08c6d6c0f.yml</a></b></td>
 						<td>- Automates CI/CD for Azure Static Web Apps<br>- Handles build and deployment on push to main branch or pull request events<br>- Executes deployment and closes pull requests using specified configurations<br>- Integrates with Azure and GitHub for seamless workflow.</td>
 					</tr>
 					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/.github/workflows/main_mxr-website-counter(dev).yml'>main_mxr-website-counter(dev).yml</a></b></td>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/.github/workflows/main_mxr-website-counter(dev).yml'>main_mxr-website-counter(dev).yml</a></b></td>
 						<td>- Automates the build and deployment process of a Python project to an Azure Function App named 'mxr-website-counter'<br>- Utilizes GitHub Actions to set up the Python environment, resolve project dependencies, and run the Azure Functions Action for deployment<br>- The workflow triggers on pushes to the main branch and manual dispatch.</td>
 					</tr>
 					</table>
@@ -105,7 +104,7 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 		<blockquote>
 			<table>
 			<tr>
-				<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/index.html'>index.html</a></b></td>
+				<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/index.html'>index.html</a></b></td>
 				<td>- The `frontend/index.html` file serves as the entry point for the project's frontend interface<br>- It defines the basic structure and metadata for the web page, including author information, page title, and icons for different devices<br>- This file sets the foundation for the user interface presentation and ensures a consistent branding experience for visitors interacting with the application.</td>
 			</tr>
 			</table>
@@ -114,11 +113,11 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 				<blockquote>
 					<table>
 					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/css/style.css'>style.css</a></b></td>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/css/style.css'>style.css</a></b></td>
 						<td>Define global styling variables and rules for consistent design across the frontend, ensuring a cohesive user experience.</td>
 					</tr>
 					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/css/reset.css'>reset.css</a></b></td>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/css/reset.css'>reset.css</a></b></td>
 						<td>- Defines global styling rules for the project, ensuring consistent layout and typography across all components<br>- Establishes box sizing, removes default margins, sets core body defaults, and enhances text wrapping<br>- Normalizes list styles, image handling, and font properties for a cohesive user interface experience.</td>
 					</tr>
 					</table>
@@ -129,7 +128,7 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 				<blockquote>
 					<table>
 					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/js/main.js'>main.js</a></b></td>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/js/main.js'>main.js</a></b></td>
 						<td>- Handles fetching and displaying visit count data from an external API upon page load<br>- The code triggers an API call to retrieve the count and updates the webpage with the latest visit count dynamically<br>- This functionality enhances user engagement by showcasing real-time visit statistics.</td>
 					</tr>
 					</table>
@@ -140,7 +139,7 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 				<blockquote>
 					<table>
 					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/images/IMG_3877.PNG'>IMG_3877.PNG</a></b></td>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/IMG_3877.PNG'>IMG_3877.PNG</a></b></td>
 						<td>- The provided code file serves as a crucial component within the project's architecture, contributing to the overall functionality of the P module<br>- It plays a key role in achieving a specific purpose within the codebase, enhancing the project's capabilities and supporting its objectives.</td>
 					</tr>
 					</table>
@@ -149,7 +148,7 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 						<blockquote>
 							<table>
 							<tr>
-								<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/frontend/images/favicon/site.webmanifest'>site.webmanifest</a></b></td>
+								<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/site.webmanifest'>site.webmanifest</a></b></td>
 								<td>- Define the project's web app appearance and behavior by configuring the site manifest file<br>- Customize the app's name, icons, theme colors, and display mode for a cohesive user experience.</td>
 							</tr>
 							</table>
@@ -191,11 +190,11 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 
 ##  Contributing
 
-- **💬 [Join the Discussions](https://github.com/MXR831367/resume-website.git/discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://github.com/MXR831367/resume-website.git/issues)**: Submit bugs found or log feature requests for the `resume-website.git` project.
-- **💡 [Submit Pull Requests](https://github.com/MXR831367/resume-website.git/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **💬 [Join the Discussions](https://github.com/MXR831367/resume-website/discussions)**: Share your insights, provide feedback, or ask questions.
+- **🐛 [Report Issues](https://github.com/MXR831367/resume-website/issues)**: Submit bugs found or log feature requests for the `resume-website.git` project.
+- **💡 [Submit Pull Requests](https://github.com/MXR831367/resume-website/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
 
-<details closed>
+<details>
 <summary>Contributing Guidelines</summary>
 
 1. **Fork the Repository**: Start by forking the project repository to your github account.
@@ -220,12 +219,12 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
 </details>
 
-<details closed>
+<details>
 <summary>Contributor Graph</summary>
 <br>
-<p align="left">
+<p>
    <a href="https://github.com{/MXR831367/resume-website.git/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=MXR831367/resume-website.git">
+      <img src="https://contrib.rocks/image?repo=MXR831367/resume-website.git" alt="Contributors graph">
    </a>
 </p>
 </details>
