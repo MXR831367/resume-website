@@ -183,10 +183,6 @@ README.md
 				<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/index.html'>index.html</a></b></td>
 				<td>- The `frontend/index.html` file serves as the entry point for the project's frontend interface<br>- It defines the basic structure and metadata for the web page, including author information, page title, and icons for different devices<br>- This file sets the foundation for the user interface presentation and ensures a consistent branding experience for visitors interacting with the application.</td>
 			</tr>
-            <tr>
-				<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/favicon.ico'>favicon.ico</a></b></td>
-				<td>- Icon for the website.</td>
-			</tr>
 			</table>
 			<details>
 				<summary><b>css</b></summary>
@@ -207,14 +203,20 @@ README.md
 				<summary><b>images</b></summary>
 				<blockquote>
                     <table>
-					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/IMG_3877.PNG'>IMG_3877.PNG</a></b></td>
-						<td>- The provided code file serves as a crucial component within the project's architecture, contributing to the overall functionality of the P module<br>- It plays a key role in achieving a specific purpose within the codebase, enhancing the project's capabilities and supporting its objectives.</td>
-					</tr>
-                    <tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/mxrlogo.svg'>mxrlogo.svg</a></b></td>
-						<td>- Logo of the author.</td>
-					</tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/96268719-DSC_5604.jpeg'>96268719-DSC_5604.jpeg</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/Certified-Adm-InfoArchive.png'>Certified-Adm-InfoArchive.png</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/Certified-Adm-Intelligent-Capture.png'>Certified-Adm-Intelligent-Capture.png</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/Certified-Dev-Intelligent-Capture.png'>Certified-Dev-Intelligent-Capture.png</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/GC20230514.jpg'>GC20230514.jpg</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/IMG_3877.PNG'>IMG_3877.PNG</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/IMG_3877.jpeg'>IMG_3877.jpeg</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/LI-In-Bug.png'>LI-In-Bug.png</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/email.png'>email.png</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/github-mark.png'>github-mark.png</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/mr-logo.png'>mr-logo.png</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/mr-logo.svg'>mr-logo.svg</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/mxrlogo.svg'>mxrlogo.svg</a></b></td><td>- Image asset.</td></tr>
+                        <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon.ico'>favicon.ico</a></b></td><td>- Image asset.</td></tr>
 					</table>
 					<details>
 						<summary><b>favicon</b></summary>
@@ -226,8 +228,11 @@ README.md
                             <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/browserconfig.xml'>browserconfig.xml</a></b></td><td>- Configuration for Microsoft tiles.</td></tr>
                             <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/favicon-16x16.png'>favicon-16x16.png</a></b></td><td>- Favicon 16x16.</td></tr>
                             <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/favicon-32x32.png'>favicon-32x32.png</a></b></td><td>- Favicon 32x32.</td></tr>
-                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/favicon.ico'>favicon.ico</a></b></td><td>- Favicon.</td></tr>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/mstile-144x144.png'>mstile-144x144.png</a></b></td><td>- Icon for Microsoft tiles.</td></tr>
                             <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/mstile-150x150.png'>mstile-150x150.png</a></b></td><td>- Icon for Microsoft tiles.</td></tr>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/mstile-310x150.png'>mstile-310x150.png</a></b></td><td>- Icon for Microsoft tiles.</td></tr>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/mstile-310x310.png'>mstile-310x310.png</a></b></td><td>- Icon for Microsoft tiles.</td></tr>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/mstile-70x70.png'>mstile-70x70.png</a></b></td><td>- Icon for Microsoft tiles.</td></tr>
                             <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/safari-pinned-tab.svg'>safari-pinned-tab.svg</a></b></td><td>- Icon for Safari pinned tab.</td></tr>
 							<tr>
 								<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/site.webmanifest'>site.webmanifest</a></b></td>
@@ -256,14 +261,6 @@ README.md
 		<tr>
 			<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/.gitignore'>.gitignore</a></b></td>
 			<td>- Specifies intentionally untracked files to ignore.</td>
-		</tr>
-		<tr>
-			<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/CONTRIBUTING.md'>CONTRIBUTING.md</a></b></td>
-			<td>- Contribution guidelines.</td>
-		</tr>
-		<tr>
-			<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/LICENSE'>LICENSE</a></b></td>
-			<td>- Project license.</td>
 		</tr>
 		<tr>
 			<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/README.md'>README.md</a></b></td>
