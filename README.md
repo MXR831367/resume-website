@@ -7,6 +7,12 @@
 [![Azure Static Web Apps CI/CD](https://github.com/MXR831367/resume-website/actions/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml/badge.svg)](https://github.com/MXR831367/resume-website/actions/workflows/azure-static-web-apps-salmon-river-08c6d6c0f.yml)
 [![Build and deploy Python project to Azure Function App - mxr-website-counter](https://github.com/MXR831367/resume-website/actions/workflows/main_mxr-website-counter(dev).yml/badge.svg)](https://github.com/MXR831367/resume-website/actions/workflows/main_mxr-website-counter(dev).yml)
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Azure Functions](https://img.shields.io/badge/Azure%20Functions-0062AD?style=for-the-badge&logo=azure-functions&logoColor=white)
+
 ##  Table of Contents
 
 - [Overview](#overview)
@@ -52,33 +58,75 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 
 ##  Project Structure
 
-```sh
-└── resume-website.git/
-    ├── .github
-    │   └── workflows
-	|       └──
-    ├── backend
-    │   └── azure-functions
-    └── frontend
-        ├── README.md
-        ├── css
-        ├── favicon.ico
-        ├── images
-        ├── index.html
-        └── js
+```
+.github/
+└── workflows/
+├── azure-static-web-apps-salmon-river-08c6d6c0f.yml
+└── main_mxr-website-counter(dev).yml
+.idea/
+└── inspectionProfiles/
+└── Project_Default.xml
+├── .gitignore
+├── aws.xml
+├── encodings.xml
+├── modules.xml
+├── resume-website.iml
+└── vcs.xml
+.vscode/
+├── extensions.json
+├── launch.json
+├── settings.json
+└── tasks.json
+backend/
+└── azure-functions/
+├── .funcignore
+├── function_app.py
+├── host.json
+└── requirements.txt
+frontend/
+├── css/
+│ ├── reset.css
+│ └── style.css
+├── images/
+│ ├── favicon/
+│ │ ├── android-chrome-192x192.png
+│ │ ├── android-chrome-512x512.png
+│ │ ├── apple-touch-icon.png
+│ │ ├── browserconfig.xml
+│ │ ├── favicon-16x16.png
+│ │ ├── favicon-32x32.png
+│ │ ├── mstile-144x144.png
+│ │ ├── mstile-150x150.png
+│ │ ├── mstile-310x150.png
+│ │ ├── mstile-310x310.png
+│ │ ├── mstile-70x70.png
+│ │ ├── safari-pinned-tab.svg
+│ │ └── site.webmanifest
+│ ├── 96268719-DSC_5604.jpeg
+│ ├── Certified-Adm-InfoArchive.png
+│ ├── Certified-Adm-Intelligent-Capture.png
+│ ├── Certified-Dev-Intelligent-Capture.png
+│ ├── GC20230514.jpg
+│ ├── IMG_3877.PNG
+│ ├── IMG_3877.jpeg
+│ ├── LI-In-Bug.png
+│ ├── email.png
+│ ├── github-mark.png
+│ ├── mr-logo.png
+│ ├── mr-logo.svg
+│ ├── mxrlogo.svg
+│ └── favicon.ico
+├── js/
+│ └── main.js
+└── index.html
+.gitignore
+README.md
 ```
 
 
 ###  Project Index
 <details open>
-	<summary><b><code>RESUME-WEBSITE.GIT/</code></b></summary>
-	<details> <!-- __root__ Submodule -->
-		<summary><b>__root__</b></summary>
-		<blockquote>
-			<table>
-			</table>
-		</blockquote>
-	</details>
+	<summary><b><code>RESUME-WEBSITE/</code></b></summary>
 	<details> <!-- .github Submodule -->
 		<summary><b>.github</b></summary>
 		<blockquote>
@@ -99,6 +147,34 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 			</details>
 		</blockquote>
 	</details>
+	<details> <!-- backend Submodule -->
+		<summary><b>backend</b></summary>
+		<blockquote>
+			<details>
+				<summary><b>azure-functions</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/backend/azure-functions/.funcignore'>.funcignore</a></b></td>
+						<td>Exclude unnecessary files and directories from Azure Functions deployment to enhance performance and security.</td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/backend/azure-functions/function_app.py'>function_app.py</a></b></td>
+						<td>- Increment website visit count in Cosmos DB using Azure Functions<br>- Handles HTTP requests to update count for a specified document ID<br>- Retrieves document, increments count, and updates Cosmos DB<br>- Filters non-relevant keys before returning updated count<br>- Handles errors and responds accordingly.</td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/backend/azure-functions/host.json'>host.json</a></b></td>
+						<td>Configures Azure Functions host settings for logging and extension bundles, ensuring efficient application monitoring and management.</td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/backend/azure-functions/requirements.txt'>requirements.txt</a></b></td>
+						<td>- Facilitates management of Azure Functions dependencies by specifying required packages in the 'requirements.txt' file<br>- Ensures proper functioning of Azure Functions and integration with Azure Cosmos<br>- Prevents potential issues by excluding 'azure-functions-worker' from manual management.</td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+		</blockquote>
+	</details>
 	<details> <!-- frontend Submodule -->
 		<summary><b>frontend</b></summary>
 		<blockquote>
@@ -107,20 +183,59 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 				<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/index.html'>index.html</a></b></td>
 				<td>- The `frontend/index.html` file serves as the entry point for the project's frontend interface<br>- It defines the basic structure and metadata for the web page, including author information, page title, and icons for different devices<br>- This file sets the foundation for the user interface presentation and ensures a consistent branding experience for visitors interacting with the application.</td>
 			</tr>
+            <tr>
+				<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/favicon.ico'>favicon.ico</a></b></td>
+				<td>- Icon for the website.</td>
+			</tr>
 			</table>
 			<details>
 				<summary><b>css</b></summary>
 				<blockquote>
 					<table>
 					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/css/style.css'>style.css</a></b></td>
-						<td>Define global styling variables and rules for consistent design across the frontend, ensuring a cohesive user experience.</td>
-					</tr>
-					<tr>
 						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/css/reset.css'>reset.css</a></b></td>
 						<td>- Defines global styling rules for the project, ensuring consistent layout and typography across all components<br>- Establishes box sizing, removes default margins, sets core body defaults, and enhances text wrapping<br>- Normalizes list styles, image handling, and font properties for a cohesive user interface experience.</td>
 					</tr>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/css/style.css'>style.css</a></b></td>
+						<td>Define global styling variables and rules for consistent design across the frontend, ensuring a cohesive user experience.</td>
+					</tr>
 					</table>
+				</blockquote>
+			</details>
+			<details>
+				<summary><b>images</b></summary>
+				<blockquote>
+                    <table>
+					<tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/IMG_3877.PNG'>IMG_3877.PNG</a></b></td>
+						<td>- The provided code file serves as a crucial component within the project's architecture, contributing to the overall functionality of the P module<br>- It plays a key role in achieving a specific purpose within the codebase, enhancing the project's capabilities and supporting its objectives.</td>
+					</tr>
+                    <tr>
+						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/mxrlogo.svg'>mxrlogo.svg</a></b></td>
+						<td>- Logo of the author.</td>
+					</tr>
+					</table>
+					<details>
+						<summary><b>favicon</b></summary>
+						<blockquote>
+							<table>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/android-chrome-192x192.png'>android-chrome-192x192.png</a></b></td><td>- Icon for Android Chrome.</td></tr>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/android-chrome-512x512.png'>android-chrome-512x512.png</a></b></td><td>- Icon for Android Chrome.</td></tr>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/apple-touch-icon.png'>apple-touch-icon.png</a></b></td><td>- Icon for Apple devices.</td></tr>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/browserconfig.xml'>browserconfig.xml</a></b></td><td>- Configuration for Microsoft tiles.</td></tr>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/favicon-16x16.png'>favicon-16x16.png</a></b></td><td>- Favicon 16x16.</td></tr>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/favicon-32x32.png'>favicon-32x32.png</a></b></td><td>- Favicon 32x32.</td></tr>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/favicon.ico'>favicon.ico</a></b></td><td>- Favicon.</td></tr>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/mstile-150x150.png'>mstile-150x150.png</a></b></td><td>- Icon for Microsoft tiles.</td></tr>
+                            <tr><td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/safari-pinned-tab.svg'>safari-pinned-tab.svg</a></b></td><td>- Icon for Safari pinned tab.</td></tr>
+							<tr>
+								<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/site.webmanifest'>site.webmanifest</a></b></td>
+								<td>- Define the project's web app appearance and behavior by configuring the site manifest file<br>- Customize the app's name, icons, theme colors, and display mode for a cohesive user experience.</td>
+							</tr>
+							</table>
+						</blockquote>
+					</details>
 				</blockquote>
 			</details>
 			<details>
@@ -134,58 +249,27 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 					</table>
 				</blockquote>
 			</details>
-			<details>
-				<summary><b>images</b></summary>
-				<blockquote>
-					<table>
-					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/IMG_3877.PNG'>IMG_3877.PNG</a></b></td>
-						<td>- The provided code file serves as a crucial component within the project's architecture, contributing to the overall functionality of the P module<br>- It plays a key role in achieving a specific purpose within the codebase, enhancing the project's capabilities and supporting its objectives.</td>
-					</tr>
-					</table>
-					<details>
-						<summary><b>favicon</b></summary>
-						<blockquote>
-							<table>
-							<tr>
-								<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/frontend/images/favicon/site.webmanifest'>site.webmanifest</a></b></td>
-								<td>- Define the project's web app appearance and behavior by configuring the site manifest file<br>- Customize the app's name, icons, theme colors, and display mode for a cohesive user experience.</td>
-							</tr>
-							</table>
-						</blockquote>
-					</details>
-				</blockquote>
-			</details>
 		</blockquote>
 	</details>
-	<details> <!-- backend Submodule -->
-		<summary><b>backend</b></summary>
-		<blockquote>
-			<details>
-				<summary><b>azure-functions</b></summary>
-				<blockquote>
-					<table>
-					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/backend/azure-functions/requirements.txt'>requirements.txt</a></b></td>
-						<td>- Facilitates management of Azure Functions dependencies by specifying required packages in the 'requirements.txt' file<br>- Ensures proper functioning of Azure Functions and integration with Azure Cosmos<br>- Prevents potential issues by excluding 'azure-functions-worker' from manual management.</td>
-					</tr>
-					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/backend/azure-functions/function_app.py'>function_app.py</a></b></td>
-						<td>- Increment website visit count in Cosmos DB using Azure Functions<br>- Handles HTTP requests to update count for a specified document ID<br>- Retrieves document, increments count, and updates Cosmos DB<br>- Filters non-relevant keys before returning updated count<br>- Handles errors and responds accordingly.</td>
-					</tr>
-					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/backend/azure-functions/host.json'>host.json</a></b></td>
-						<td>Configures Azure Functions host settings for logging and extension bundles, ensuring efficient application monitoring and management.</td>
-					</tr>
-					<tr>
-						<td><b><a href='https://github.com/MXR831367/resume-website.git/blob/master/backend/azure-functions/.funcignore'>.funcignore</a></b></td>
-						<td>Exclude unnecessary files and directories from Azure Functions deployment to enhance performance and security.</td>
-					</tr>
-					</table>
-				</blockquote>
-			</details>
-		</blockquote>
-	</details>
+    <br>
+	<table>
+		<tr>
+			<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/.gitignore'>.gitignore</a></b></td>
+			<td>- Specifies intentionally untracked files to ignore.</td>
+		</tr>
+		<tr>
+			<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/CONTRIBUTING.md'>CONTRIBUTING.md</a></b></td>
+			<td>- Contribution guidelines.</td>
+		</tr>
+		<tr>
+			<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/LICENSE'>LICENSE</a></b></td>
+			<td>- Project license.</td>
+		</tr>
+		<tr>
+			<td><b><a href='https://github.com/MXR831367/resume-website/blob/main/README.md'>README.md</a></b></td>
+			<td>- This file.</td>
+		</tr>
+	</table>
 </details>
 
 ##  Contributing
@@ -223,8 +307,8 @@ resume-website is a personal portfolio/resume site deployed on Azure Static Web 
 <summary>Contributor Graph</summary>
 <br>
 <p>
-   <a href="https://github.com{/MXR831367/resume-website.git/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=MXR831367/resume-website.git" alt="Contributors graph">
+   <a href="https://github.com/MXR831367/resume-website/graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=MXR831367/resume-website" alt="Contributors graph">
    </a>
 </p>
 </details>
