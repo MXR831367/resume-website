@@ -52,7 +52,7 @@ dd {
 
 body {
   margin: 0;
-  background-color: var(--background-color);
+  background-color: var(--primarycolor);
   color: var(--text-color);
 }
 
@@ -170,7 +170,7 @@ footer .footer-break {
 
 .splash {
   background-color: var(--primarycolor);
-  height: 100svh;
+  height: 100dvh;
   position: relative;
   isolation: isolate;
 }
@@ -225,6 +225,7 @@ footer .footer-break {
 }
 
 .page-container {
+  background-color: var(--background-color);
   justify-content: center;
   align-items: center;
   flex-direction: column;
